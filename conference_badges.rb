@@ -16,12 +16,11 @@ def assign_rooms(attendees)
   assignments = []
   i = 1
   attendees.each do |x|
-    badges.push("Hello, #{x}! You'll be assigned to room #{i}!")
+    assignments.push("Hello, #{x}! You'll be assigned to room #{i}!")
     i += 1
   end
   puts(assignments)
   assignments
-
 end
 
 def printer(badges, room_assignments)
