@@ -13,15 +13,9 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  assignments = []
-  i = 1
-  attendees.each do |x|
-    assignments.push("Hello, #{x}! You'll be assigned to room #{i}!")
-    i += 1
-  end
-  puts(assignments)
-  assignments
-end
+  new_array=[]
+  attendees.each.with_index(1) { |name, index| new_array << "Hello, #{name}! You'll be assigned to room #{index}!"}
+  new_array
 
 def printer(attendees)
   batch_badge_creator(attendees).each do |i|
