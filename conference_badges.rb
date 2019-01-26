@@ -26,7 +26,3 @@ end
 def printer(badges, room_assignments)
   puts badges, room_assignments
 end
-
-def conference_badges
-
-end
