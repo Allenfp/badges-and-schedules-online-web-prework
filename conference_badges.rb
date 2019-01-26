@@ -27,8 +27,8 @@ def printer(attendees)
   x = batch_badge_creator(attendees)
   y = assign_rooms(attendees)
   i = 0
-  p = 0
-  x.each do
+
+  x.length.times do
     puts x[i]
     puts y[i]
     i += 1
