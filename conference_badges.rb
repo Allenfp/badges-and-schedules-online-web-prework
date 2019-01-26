@@ -30,10 +30,7 @@ def printer(attendees)
   p = 0
   x.each do
     puts x[i]
+    puts y[i]
     i += 1
-  end
-  y.each do
-    puts y[p]
-    p += 1
   end
 end
