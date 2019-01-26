@@ -24,13 +24,13 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  x = batch_badge_creator(attendees)
-  # y = assign_rooms(attendees)
+  # x = batch_badge_creator(attendees)
+  y = assign_rooms(attendees)
   i = 0
 
-  x.length.times do
-    puts x[i]
-    # puts y[i]
+  y.length.times do
+    # puts x[i]
+    puts y[i]
     i += 1
   end
 end
